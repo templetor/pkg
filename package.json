@@ -1,0 +1,59 @@
+{
+  "name": "ph_reponame",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.13.2",
+  "description": "",
+  "author": "ph_name <ph_email>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/ph_name",
+  "homepage": "https://github.com/ph_name/ph_reponame#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ph_name/ph_reponame.git"
+  },
+  "bugs": "https://github.com/ph_name/ph_reponame/issues",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
+    }
+  },
+  "main": "./dist/main.mjs",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/main.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "esno src/main.ts",
+    "release": "bumpp -no-push && nr build && pnpm publish",
+    "up": "taze major -I",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.9.1",
+    "@antfu/ni": "^0.23.0",
+    "@types/node": "^22.9.0",
+    "bumpp": "^9.8.1",
+    "eslint": "^9.14.0",
+    "eslint-plugin-format": "^0.1.2",
+    "esno": "^4.8.0",
+    "taze": "^0.18.0"
+  }
+}
