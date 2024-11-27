@@ -2,7 +2,7 @@
   "name": "ph_reponame",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.13.2",
+  "packageManager": "pnpm@9.14.2",
   "description": "",
   "author": "ph_name <ph_email>",
   "license": "MIT",
@@ -47,11 +47,11 @@
     "access": "public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.9.1",
-    "@antfu/ni": "^0.23.0",
-    "@types/node": "^22.9.0",
+    "@antfu/eslint-config": "^3.10.0",
+    "@antfu/ni": "^0.23.1",
+    "@types/node": "^22.10.0",
     "bumpp": "^9.8.1",
-    "eslint": "^9.14.0",
+    "eslint": "^9.15.0",
     "eslint-plugin-format": "^0.1.2",
     "esno": "^4.8.0",
     "taze": "^0.18.0"
